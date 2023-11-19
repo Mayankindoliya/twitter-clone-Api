@@ -1,0 +1,52 @@
+[
+  {
+    "category": "Technology",
+    "hashtag": "#TechTalk",
+    "tweets_count": 1500
+  },
+  {
+    "category": "Sports",
+    "hashtag": "#SportsMania",
+    "tweets_count": 1200
+  },
+  {
+    "category": "Entertainment",
+    "hashtag": "#HollywoodBuzz",
+    "tweets_count": 1800
+  },
+  {
+    "category": "Food",
+    "hashtag": "#FoodieFiesta",
+    "tweets_count": 900
+  },
+  {
+    "category": "Travel",
+    "hashtag": "#Wanderlust",
+    "tweets_count": 1300
+  },
+  {
+    "category": "Fashion",
+    "hashtag": "#StyleGuru",
+    "tweets_count": 1100
+  },
+  {
+    "category": "Science",
+    "hashtag": "#ScienceWonders",
+    "tweets_count": 800
+  },
+  {
+    "category": "Health",
+    "hashtag": "#HealthyLiving",
+    "tweets_count": 1000
+  },
+  {
+    "category": "Music",
+    "hashtag": "#MusicVibes",
+    "tweets_count": 1600
+  },
+  {
+    "category": "Nature",
+    "hashtag": "#NatureLovers",
+    "tweets_count": 1400
+  }
+]

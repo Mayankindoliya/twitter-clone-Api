@@ -25,7 +25,7 @@ module.exports = class UsersControllers {
 
   // Login user
   static async loginUser(document) {
-    const user = await Users.findOne({email: document.email}, "password fullname").lean()
+    const user = await Users.findOne({email: document.email}, "password fullname username").lean()
     // check if the user exist or not
     if(!user) {
       throw new Error("user not found")
@@ -34,7 +34,7 @@ module.exports = class UsersControllers {
       throw new Error("password not matched")
     }
     const token = jwt.createJwt({_id: user._id})
-    return {token, user: {_id: user._id, fullname: user.fullname}}
+    return {token, user: {_id: user._id, fullname: user.fullname, username: user.username}}
   }
 
 }

@@ -1,3 +1,4 @@
+const Trending = require('../models/trending');
 const Tweets = require('../models/tweets')
 
 module.exports = class TweetsControllers {
@@ -14,8 +15,13 @@ module.exports = class TweetsControllers {
   //Retrieve all tweets:
   static async getTweets() {
     return await Tweets.find({}, "")
-      .populate('user', '_id fullName username')
+      .populate('user', '_id fullname username')
+      .sort({updated_at: -1})
       .lean()
+  }
+
+  static async getTrending() {
+    return Trending.find({}).lean();
   }
 
 }

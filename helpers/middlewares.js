@@ -16,8 +16,7 @@ async function authenticationMiddleware(req, res, next) {
     next();  //goes to the next middleware or goes to the REST API:
 
   } catch (err) {
-    console.log('error during authentication')
-    next(err)
+    return res.status(401).json({success: false, message: 'jwt expired'});
   }
 }
 
